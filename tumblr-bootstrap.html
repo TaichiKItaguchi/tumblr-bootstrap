@@ -4,45 +4,107 @@
     <meta charset="UTF-8">
     <title>人生は何事もノリとタイミングである。</title>
     <meta name="description">
+    <!-- Goole Webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
     <!-- FontAwesome CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
      body{
-       font-family: ;
+       font-family: -apple-system, BlinkMacSystemFont,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+       font-size: 16px;
+       letter-spacing: 1.5px;
+       line-height: 1.75;
+     }
+     a{
+       color: #7158e2;
+     }
+     .navbar{
+       background-color: #2ecc71;
+     }
+     .navbar-brand{
+       color:#ffffff;
+     }
+     .nav-link{
+       color: #ffffff;
+     }
+     .jumbotron{
+       background: url(https://farm1.staticflickr.com/807/40863280261_31143c66fd_h.jpg) center no-repeat;
+       background-size: cover;
+       color:#ffffff;
+     }
+     .section-title{
+       font-family: 'Yatra One', cursive;
+     }
+     .post{
+       padding: 7px 10px;
+     }
+     .post-title{
+       position: relative;
+       padding: .5em .75em;
+       background-color: #f0f0f0;
+       border-radius: 6px;
+     }
+     .post-title::after{
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-top: 15px solid #f0f0f0;
+     }
+     .post-date{
+       display: inline-block;
+       padding-top: 7px;
+       padding-bottom: 30px;
+     }
+     .post-tag{
+       display: inline-block;
+       float: right;
+     }
+     .footer{
+       background-color: #2ecc71;
      }
     </style>
 </head>
 <body>
+  <!-- facebook -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12&appId=128093070692600&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#">Tumblr</a>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav justify-content-end">
+        <a class="navbar-brand" href="#"><i class="fab fa-tumblr"></i>&nbsp;Tumblr</a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="">Home</a>
+                <a class="nav-link" href="">クリエイティブな話</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">中の人の紹介</a>
+                <a class="nav-link" href="">にちじょうの話</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">Facebook</a>
+                <a class="nav-link" href="/profile">中の人の紹介</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- /.navbar -->
-    <div class="container">
       <div class="jumbotron">
-        <h1 class="">人生は何事もノリとタイミングである</h1>
-        <p class="lead">五体満足じゃないクリエイティブディレクターのブログ</p>
-      </div>
+        <div class="container">
+          <h1 class="text-center">人生は何事もノリとタイミングである</h1>
+          <p class="lead text-center">五体満足じゃないクリエイティブディレクターのブログ</p>
+        </div>
       <!-- /.jumbotron -->
     </div>
   </header>
@@ -51,11 +113,12 @@
      <div class="row">
        <div class="col-md-9 col-sm-9 col-xs-12">
          <div class="main" role="main">
-           <h2>Blogs</h2>
+           <h2 class="section-title"><i class="fas fa-pencil-alt"></i>&nbsp;Blogs</h2>
            <section class="post">
              <div class="post-haeder">
                <h1 class="post-title">徒然なるままにひぐらし</h1>
-               <p><span class="post-date">2018/03/30</span><span class="post-tag"タグ,タグ,タグ,タグ</span></p>
+               <div class="post-date">更新日時＝2018/03/30</div>
+               <div class="post-tag">タグ,タグ,タグ,タグ</div>
              </div>
              <!-- /.post-haeder -->
              <div class="post-entry">
@@ -75,6 +138,9 @@
               <figcaption class="figure-caption">イメージキャプション。徒然なるままにひぐらし</figcaption>
             </figure>
             <hr>
+            <blockquote class="blo">
+              それはその間とうとうその希望方といったものの以上でありないませ。けっして昨日に排斥者はちゃんとこの意味なまいまでにさのでいるなでも講義云いたあるて、こうにも思いたましありな。弁当を考えますのはいよいよ場合が同時にますましです。あたかも岩崎さんを出立国家そうろかに出来です錐そんな党派私か教育がというご通知なますんないて、その今もいずれか道義書物から上げるて、嘉納さんの事を一つのどこが何しろお関係としてそれ条件のご蹂躙を上っようにもちろん肝買収がしるませて、どうももう授業を考えませて来ですのが思っますな。だからそこでご社会を堪のもずいぶんいやと見つからでて、そのがたをは纏っんてという片仮名をなるけれどもいたなけれ。
+            </blockquote>
              </div>
              <!-- /.post-entry -->
            </section>
@@ -84,27 +150,34 @@
        </div>
        <div class="col-md-3 col-md-3 col-xs-12">
          <div class="sub" role="sub">
-           <h3>Twitter</h3>
-           <h3>Facebook</h3>
+           <h3 class="section-title"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</h3>
+           <div class="twitter-widget">
+             <a href="https://twitter.com/goodsun_taichi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @goodsun_taichi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             <a class="twitter-timeline" href="https://twitter.com/goodsun_taichi?ref_src=twsrc%5Etfw" data-height="520">Tweets by goodsun_taichi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+           </div>
+           <h3 class="section-title"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</h3>
+           <div class="facebook-widget">
+             <div class="fb-page" data-href="https://www.facebook.com/webyahonpo/" data-tabs="timeline" data-height="550" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/webyahonpo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/webyahonpo/">WEB屋本舗</a></blockquote></div>
+           </div>
          </div>
          <!-- /.sub -->
        </div>
      </div>
    </div>
-   <footer class="footer bg-dark">
+   <footer class="footer">
      <div class="container">
        <div class="row">
          <div class="col-sm-8 col-md-7 py-4">
-           <h4 class="text-white">About</h4>
-           <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+           <h4 class="text-white"><i class="fas fa-question-circle"></i>&nbsp;About</h4>
+           <p class="text-white">キタグチタイチ（クリエイティブディレクター／デザイナー）<br>2016年6月にクモ膜下出血、脳梗塞、水頭症を発症し、五体満足じゃなくなった<br>福岡在住のフリーランスのクリエイティブディレクター／デザイナー。web制作がメインだが、紙モノのデザインや結婚式に使う映像制作も行っている。<br><a href="">詳しくはこちら</a></p>
          </div>
          <div class="col-sm-4 offset-md-1 py-4">
-           <h4 class="text-white">Contact</h4>
+           <h4 class="text-white"><i class="fas fa-exclamation-circle"></i>&nbsp;Contact</h4>
            <ul class="list-unstyled">
-             <li><a href="#" class="text-white">Follow on Twitter</a></li>
-             <li><a href="#" class="text-white">Like on Facebook</a></li>
-             <li><a href="#" class="text-white">Email me</a></li>
-             <li><a href="#" class="text-white">Email me</a></li>
+             <li><a href="https://www.facebook.com/goodsun.taichi" class="text-white"><i class="fab fa-twitter-square"></i>&nbsp;Twitter</a></li>
+             <li><a href="https://www.facebook.com/goodsun.taichi" class="text-white"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a></li>
+             <li><a href="https://plus.google.com/u/0/+TaichiKitagichi" class="text-white"><i class="fab fa-google-plus"></i>&nbsp;Google+</a></li>
+             <li><a href="https://github.com/TaichiKItaguchi" class="text-white"><i class="fab fa-github"></i>&nbsp;Github</a></li>
            </ul>
          </div>
        </div>
